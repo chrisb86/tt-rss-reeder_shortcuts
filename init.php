@@ -17,19 +17,16 @@ class reeder_shortcuts extends Plugin {
 
 	function hook_hotkey_map($hotkeys) {
 
-    $hotkeys = array(
-			"n" => "next_feed",
-			"p" => "prev_feed",
-			"j" => "next_article",
-			"k" => "prev_article",
-			"f" => "search_dialog",
-			"s" => "toggle_mark",
-			"m" => "toggle_unread",
-			"t" => "edit_tags",
-			"v" => "open_in_new_window",
-      "a" => "feed_catchup",
-		);
-
+    $hotkeys["n"]   = "next_feed";
+    $hotkeys["p"]   = "prev_feed";
+    $hotkeys["j"]   = "next_article_noscroll";
+    $hotkeys["k"]   = "prev_article_noscroll";
+    $hotkeys["f"]   = "search_dialog";
+    $hotkeys["s"]   = "toggle_mark";
+    $hotkeys["m"]   = "toggle_unread";
+    $hotkeys["t"]   = "edit_tags";
+    $hotkeys["v"]   = "open_in_new_window";
+    $hotkeys["a"]   = "feed_catchup";
 
 		return $hotkeys;
 	}
